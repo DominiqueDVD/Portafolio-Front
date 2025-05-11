@@ -1,0 +1,11 @@
+{
+    "hosting": {
+      "public": "build",  // O la carpeta donde se encuentra tu aplicación lista para producción
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  }
+  
