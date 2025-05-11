@@ -1,7 +1,6 @@
 import MainLayout from "../../layouts/mainLayout";
 import HomePageComponent from "../../pages/home";
-import TechnologiesPageComponent from "../../pages/techonologies";
-
+import TechnologiesPageComponent from "../../pages/technologies";
 const routesPages = [
   {
     path: '/',

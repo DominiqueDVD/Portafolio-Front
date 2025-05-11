@@ -9,7 +9,7 @@ interface TechnologiesPageProps {
 const TechnologiesComponent: React.FC<TechnologiesPageProps> = ({ isAuthenticated, setIsAuthenticated }) => {
   const [showModal, setShowModal] = useState<boolean>(false); 
   const [token, setToken] = useState<string | null>(null); 
-
+  console.log(token)
   const handleSaveChanges = () => {
     if (!isAuthenticated) {
       setShowModal(true);
@@ -21,6 +21,7 @@ const TechnologiesComponent: React.FC<TechnologiesPageProps> = ({ isAuthenticate
   };
 
   const handleLoginSuccess = (token: string) => {
+ 
     setToken(token);
     setIsAuthenticated(true); 
     localStorage.setItem('jwt_token', token); 

@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import routesPages from "./config/routes/routesPages";
 import PageTitleManager from "./utils/PageTitleManager";
-
 import React from "react";
+
 function App() {
   return (
     <>
@@ -22,6 +22,7 @@ function App() {
             />
           );
         })}
+
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
